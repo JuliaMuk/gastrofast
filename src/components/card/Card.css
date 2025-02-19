@@ -5,7 +5,9 @@
     width: 200px;
     max-width: 100%;
     padding: 10px;
-
+    
+    /*возможно здесь не хватает transition, чтобы hoveк-эффект был плавным*/
+    
     background-color: var(--main-White);
     border-radius: 10px;
     border: none;
@@ -59,7 +61,7 @@
 /* ----- price -----*/
 .card__price {
     color: var(--main-Gray);
-    font-family: "PP Neue Montreal", sans-serif;
+    font-family: "PP Neue Montreal", sans-serif; /*у тебя везде далее шрифт повторяется, может его стоит задать у всей карточки .card один раз, чтобы не повторять или даже у каталога или страницы? */
     font-weight: 700;
     font-size: var(--title);
 }
@@ -126,7 +128,7 @@
     transition: background-color 0.3s ease-in-out;
 }
   
-  .button__add:hover {
+  .button__add:hover { /*не забудь hover-эффект*/
     background-color: var(--alpha-Silver-15);
   }
   
